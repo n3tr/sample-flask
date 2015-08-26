@@ -1,4 +1,7 @@
 
+import gevent.monkey
+gevent.monkey.patch_all()
+
 from flask import Flask
 app = Flask(__name__)
 
